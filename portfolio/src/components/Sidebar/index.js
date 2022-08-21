@@ -19,7 +19,7 @@ const Sidebar = () => (
       <NavLink activeclassname="active" className="aboutLink" to="/about">
         <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
       </NavLink>
-      <NavLink activeclassname="active" className="contactLink" to="/">
+      <NavLink activeclassname="active" className="contactLink" to="/contact">
         <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
       </NavLink>
     </nav>

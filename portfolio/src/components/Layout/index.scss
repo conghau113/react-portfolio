@@ -2,41 +2,42 @@ $black-color: #181818;
 $yellow-color: #ffd700;
 $a03out: all 0.3s ease-out;
 .page {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-  }
-  
-  .topTags {
-    bottom: auto;
-    top: 35px;
-  }
-  
-  .tags {
-    color: $yellow-color;
-    opacity: 0.6;
-    position: absolute;
-    bottom: 0;
-    left: 120px;
-    font-size: 18px;
-    font-family: 'La Belle Aurore', cursive;
-  }
-  
-  .bottomTagHtml {
-    margin-left: -20px;
-  }
-  
-  .container {
-    width: 100%;
-    will-change: contents;
-    height: 90%;
-    min-height: 566px;
-    position: absolute;
-    // opacity: 0;
-    top: 5%;
-    margin: 0 auto;
-    z-index: 1;
-    transform-style: preserve-3d;
-    animation: fadeIn 1s forwards;
-    animation-delay: 1s;
-  }
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.topTags {
+  bottom: auto;
+  top: 35px;
+}
+
+.tags {
+  color: $yellow-color;
+  opacity: 0.6;
+  position: absolute;
+  bottom: 25px;
+  left: 120px;
+  font-size: 18px;
+  font-family: 'La Belle Aurore', cursive;
+}
+
+.bottomTagHtml {
+  bottom: 0px;
+  margin-left: -25px;
+}
+
+.container {
+  width: 100%;
+  will-change: contents;
+  height: 90%;
+  min-height: 566px;
+  position: absolute;
+  opacity: 0;
+  top: 5%;
+  margin: 0 auto;
+  z-index: 1;
+  transform-style: preserve-3d;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1s;
+}
