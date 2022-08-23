@@ -4,11 +4,14 @@ import AnimatedLetters from '../AnimatedLetters'
 import Loader from 'react-loaders'
 const About = () => {
   const [letterClass, setLetterclass] = useState('text-animate')
+  
   useEffect(() => {
-    setTimeout(() => {
-      return setLetterclass('text-animate-hover')
+    const timer = setTimeout(() => {
+      setLetterclass('text-animate-hover')
     }, 3000)
+    return () => clearTimeout(timer)
   }, [])
+
   return (
     <>
       <div className="container aboutPage">
