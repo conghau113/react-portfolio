@@ -4,7 +4,7 @@ $a03out: all 0.3s ease-out;
 
 .navBar {
   background: $black-color;
-  width: 64px;
+  width: 75px;
   height: 100%;
   position: absolute;
   top: 0;
@@ -101,7 +101,7 @@ $a03out: all 0.3s ease-out;
 
     a.portfolioLink {
       &:after {
-        content: 'PORTFOLIO';
+        content: 'MY WORK';
       }
     }
   }
