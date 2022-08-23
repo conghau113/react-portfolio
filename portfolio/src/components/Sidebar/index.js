@@ -3,8 +3,18 @@ import './index.scss'
 import LogoS from '../../assets/images/logo-s.png'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faHome, faUser, faBriefcase } from '@fortawesome/free-solid-svg-icons'
-import { faLinkedin, faGithub, faYoutube, faSkype} from '@fortawesome/free-brands-svg-icons'
+import {
+  faEnvelope,
+  faHome,
+  faUser,
+  faBriefcase,
+} from '@fortawesome/free-solid-svg-icons'
+import {
+  faLinkedin,
+  faGithub,
+  faFacebook,
+  faSkype,
+} from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => (
   <div className="navBar">
@@ -29,12 +39,12 @@ const Sidebar = () => (
     <ul>
       <li>
         <a
-          href="https://www.linkedin.com/in/slobodan-gaji%C4%87-006bb8b8/"
-          target="_blank"
+          href="https://www.facebook.com/conghau.nguyen.370515/"
           rel="noreferrer"
+          target="_blank"
         >
           <FontAwesomeIcon
-            icon={faLinkedin}
+            icon={faFacebook}
             color="#4d4d4e"
             className="anchor-icon"
           />
@@ -42,7 +52,7 @@ const Sidebar = () => (
       </li>
       <li>
         <a
-          href="https://github.com/bobangajicsm"
+          href="https://github.com/conghau113"
           target="_blank"
           rel="noreferrer"
         >
@@ -55,17 +65,18 @@ const Sidebar = () => (
       </li>
       <li>
         <a
-          href="https://www.youtube.com/channel/UCBu5ulO4d-d47lAVybpRTkw"
-          rel="noreferrer"
+          href="https://www.linkedin.com/in/c%C3%B4ng-h%E1%BA%ADu-nguy%E1%BB%85n-8815a1242/"
           target="_blank"
+          rel="noreferrer"
         >
           <FontAwesomeIcon
-            icon={faYoutube}
+            icon={faLinkedin}
             color="#4d4d4e"
             className="anchor-icon"
           />
         </a>
       </li>
+
       <li>
         <a href="skype:live:bobangajicsm" rel="noreferrer" target="_blank">
           <FontAwesomeIcon
