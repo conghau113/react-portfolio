@@ -84,12 +84,20 @@
     }
   }
 
-  .homeImageBox{
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 50%;
-    background-color: $green-color;
-    transform: translateY(-76px);
-  }
+  // .homeImageBox{
+  //   position: absolute;
+  //   right: 0;
+  //   top: 0;
+  //   width: 50%;
+  //   background-color: $green-color;
+  //   transform: translateY(-76px);
+  //   overflow: hidden;
+  //   z-index: 3;
+
+  //   .homeCircleBackground{
+  //     .homeImage{
+  //       width: 200px;
+  //     }
+  //   }
+  // }
 }

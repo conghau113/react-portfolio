@@ -118,6 +118,11 @@
         content: 'MY WORK';
       }
     }
+    a.skillsLink {
+      &:after {
+        content: 'SKILLS';
+      }
+    }
   }
   ul {
     position: absolute;
