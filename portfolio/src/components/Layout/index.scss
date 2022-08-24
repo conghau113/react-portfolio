@@ -1,6 +1,4 @@
-$black-color: #181818;
-$yellow-color: #ffd700;
-$a03out: all 0.3s ease-out;
+@import '../../style/maincolors.scss'; 
 .page {
   width: 100%;
   height: 100%;
@@ -13,7 +11,7 @@ $a03out: all 0.3s ease-out;
 }
 
 .tags {
-  color: $yellow-color;
+  color: $primary-color;
   opacity: 0.6;
   position: absolute;
   bottom: 25px;
@@ -43,11 +41,11 @@ $a03out: all 0.3s ease-out;
 }
 
 .container.aboutPage,
-.container.contactPage{
+.container.contactPage {
   h1 {
     font-size: 53px;
     font-family: 'Coolvetica';
-    color: #ffd700;
+    color: $primary-color;
     font-weight: 400;
     margin-top: 0;
     position: relative;
@@ -55,10 +53,29 @@ $a03out: all 0.3s ease-out;
     left: -10px;
     user-select: none;
 
+    a {
+      text-decoration: none;
+      // font-style: italic;
+      font-weight: 100;
+      text-align: center;
+      padding: 0 0 10px 0;
+
+      p {
+        padding: 0 10px;
+        color: $text-color;
+        padding: 0 0 10px 15px;
+
+        svg {
+          color: $text-color;
+          padding-right: 5px;
+        }
+      }
+    }
+
     &:before {
       content: '<h1>';
       font-family: 'La Belle Aurore', cursive;
-      color: #ffd700;
+      color: $primary-color;
       font-size: 18px;
       position: absolute;
       margin-top: -10px;
@@ -70,7 +87,7 @@ $a03out: all 0.3s ease-out;
     &:after {
       content: '<h1/>';
       font-family: 'La Belle Aurore', cursive;
-      color: #ffd700;
+      color: $primary-color;
       font-size: 18px;
       line-height: 18px;
       position: absolute;
@@ -83,7 +100,7 @@ $a03out: all 0.3s ease-out;
 
   p {
     font-size: 13px;
-    color: #fff;
+    color: $text-active;
     font-family: sans-serif;
     font-weight: 300;
     max-width: fit-content;
@@ -112,7 +129,7 @@ $a03out: all 0.3s ease-out;
 
   .text-animate-hover {
     &:hover {
-      color: #fff;
+      color: $text-active;
     }
   }
 }

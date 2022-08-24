@@ -1,9 +1,14 @@
 import { useState, useEffect, useRef } from 'react'
+import { Link } from 'react-router-dom'
 // import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import emailjs from '@emailjs/browser'
 import './index.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faEnvelopeCircleCheck
+} from '@fortawesome/free-solid-svg-icons'
 
 const Contact = () => {
   const [letterClass, setLetterclass] = useState('text-animate')
@@ -36,6 +41,11 @@ const Contact = () => {
         }
       )
   }
+
+  // mailto
+  const handleMailto = () => {
+    window.location = 'mailto:conghau1132000@gmail.com'
+  }
   return (
     <>
       <div className="container contactPage">
@@ -46,6 +56,12 @@ const Contact = () => {
               strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
               idx={15}
             />
+            <Link to="#" onClick={handleMailto}>
+              <p>
+                <FontAwesomeIcon icon={faEnvelopeCircleCheck} color="#4d4d4e" />
+                : conghau1132000@gmail
+              </p>
+            </Link>
           </h1>
           <div className="contact-form">
             <form ref={refForm} onSubmit={sendEmail}>

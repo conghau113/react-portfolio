@@ -1,4 +1,6 @@
-$primary-color: #ffd700;
+// $primary-color: #ffd700;
+@import '../src/style/maincolors.scss';
+
 @import 'animate.css';
 // css loader
 @import '~loaders.css/src/animations/pacman.scss';

@@ -1,9 +1,9 @@
-$black-color: #181818;
+@import '../../style/maincolors.scss';
 .portfolioPage {
   h1 {
     font-size: 53px;
     font-family: 'Coolvetica';
-    color: #ffd700;
+    color: $primary-color;
     font-weight: 400;
     margin-top: 0;
     position: relative;
@@ -15,7 +15,7 @@ $black-color: #181818;
     &:before {
       content: '<h1>';
       font-family: 'La Belle Aurore', cursive;
-      color: #ffd700;
+      color: $primary-color;
       font-size: 18px;
       position: absolute;
       margin-top: -10px;
@@ -27,7 +27,7 @@ $black-color: #181818;
     &:after {
       content: '<h1/>';
       font-family: 'La Belle Aurore', cursive;
-      color: #ffd700;
+      color: $primary-color;
       font-size: 18px;
       line-height: 18px;
       position: absolute;
@@ -40,7 +40,7 @@ $black-color: #181818;
 
   p {
     font-size: 13px;
-    color: #fff;
+    color: $text-active;
     font-family: sans-serif;
     font-weight: 300;
     max-width: fit-content;
@@ -64,11 +64,13 @@ $black-color: #181818;
     vertical-align: middle;
     display: table-cell;
     max-height: 90%;
+
+    
   }
 
   .text-animate-hover {
     &:hover {
-      color: #fff;
+      color: $text-active;
     }
   }
 
@@ -111,7 +113,7 @@ $black-color: #181818;
     .myworkTitle {
       margin-bottom: 0;
       margin-top: 0;
-      color: #fff;
+      color: $text-active;
       font-size: 24px;
       font-weight: 500;
       line-height: 24px;
@@ -120,7 +122,7 @@ $black-color: #181818;
     .myworkDes {
       font-size: 14px;
       margin-bottom: 5px;
-      color: #fff;
+      color: $text-active;
       font-weight: 700;
     }
 
@@ -130,10 +132,10 @@ $black-color: #181818;
       padding: 0 23px;
       height: 40px;
       line-height: 34px;
-      border: 1px solid #ffd700;
+      border: 1px solid $primary-color;
       //   border-radius: 4px;
       font-size: 14px;
-      color: #fff;
+      color: $text-active;
       background: transparent;
       text-transform: uppercase;
       font-weight: 100;
@@ -142,14 +144,14 @@ $black-color: #181818;
     }
 
     .myworkBtn:hover {
-      color: $black-color;
+      color: $gray-color;
       transform: translateY(-3px);
-      background: #ffd700;
+      background: $primary-color;
     }
 
     &:after {
       content: '';
-      background: linear-gradient(180deg, #291d88, #000);
+      background: linear-gradient(180deg, $background-color, $gray-color);
       position: absolute;
       left: 0;
       right: 0;

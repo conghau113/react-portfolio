@@ -1,9 +1,7 @@
-$black-color: #181818;
-$yellow-color: #ffd700;
-$a03out: all 0.3s ease-out;
+@import '../../style/maincolors.scss';
 
 .navBar {
-  background: $black-color;
+  background: $background-color;
   width: 75px;
   height: 100%;
   position: absolute;
@@ -17,6 +15,7 @@ $a03out: all 0.3s ease-out;
     margin-top: 9px;
     font-weight: lighter;
     text-align: center;
+    user-select: none;
     // -webkit-text-stroke: 0.1px rgb(255, 255, 255);
   }
 
@@ -28,8 +27,8 @@ $a03out: all 0.3s ease-out;
     overflow: hidden;
     margin-top: 24px;
     margin-left: 12px;
-    // border: 1px solid rgba($color: $yellow-color, $alpha: 0.5);
-    box-shadow: 2.1px 0.9px 0.5px 0px rgba(225, 255, 0, 0.419);
+    // border: 1px solid rgba($color: $primary-color, $alpha: 0.5);
+    box-shadow: 1.5px 1px 1px 0px $green-color;
     img {
       display: block;
       width: 100%;
@@ -53,13 +52,13 @@ $a03out: all 0.3s ease-out;
 
     a.active {
       svg {
-        color: $yellow-color;
+        color: $primary-color;
       }
     }
 
     a {
       font-size: 22px;
-      color: #4d4d4e;
+      color: $text-color;
       display: block;
       line-height: 51px;
       height: 51px;
@@ -67,11 +66,11 @@ $a03out: all 0.3s ease-out;
       text-decoration: none;
 
       i {
-        transition: all 0.3s ease-out;
+        transition: $a03out;
       }
 
       &:hover {
-        color: $yellow-color;
+        color: $primary-color;
 
         svg {
           opacity: 0;
@@ -92,7 +91,7 @@ $a03out: all 0.3s ease-out;
         width: 100%;
         text-align: center;
         opacity: 0;
-        transition: $a03out;
+        transition: .2s ease-in-out;
       }
 
       &:first-child {
@@ -136,12 +135,12 @@ $a03out: all 0.3s ease-out;
         display: block;
         font-size: 15px;
         line-height: 16px;
-        color: #4d4d4e;
+        color: $text-color;
       }
 
       &:hover {
         .anchor-icon {
-          color: #ffd700;
+          color: $primary-color;
         }
       }
     }

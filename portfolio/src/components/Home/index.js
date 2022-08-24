@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
 import { Link } from 'react-router-dom'
+import HomeImage from '../../assets/images/NCH.jpg' 
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 const Home = () => {
@@ -60,6 +61,11 @@ const Home = () => {
           <Link to="/contact" className="flatButton">
             CONTACT ME
           </Link>
+        </div>
+        <div className='homeImageBox'>
+          <div className='homeCircleBackground'>
+            <img className='homeImage' src={HomeImage} alt="Công Hậu" />
+          </div>
         </div>
       </div>
       <Loader type='pacman' />

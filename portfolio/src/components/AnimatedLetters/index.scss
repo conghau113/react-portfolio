@@ -1,3 +1,4 @@
+@import '../../style/maincolors.scss';
 .text-animate {
   display: inline-block;
   opacity: 0;
@@ -15,7 +16,7 @@
   
   &:hover {
     animation: heartBeat 1s;
-    color: #ffd700;
+    color: $primary-color;
   }
 }
 

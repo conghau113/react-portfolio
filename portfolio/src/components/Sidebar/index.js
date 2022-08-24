@@ -12,15 +12,14 @@ import {
   faLinkedin,
   faGithub,
   faFacebook,
-  faSkype,
 } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => (
   <div className="navBar">
     <Link className="logo" to="/about">
-      <img src={avaSidebar} alt='Công Hậu' />
+      <img src={avaSidebar} alt="Công Hậu" />
     </Link>
-      <h6 className='nameAva'>Công Hậu</h6>
+    <h6 className="nameAva">Công Hậu</h6>
     <nav>
       <NavLink exact="true" activeclassname="active" to="/">
         <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
@@ -77,9 +76,14 @@ const Sidebar = () => (
       </li>
 
       <li>
-        <a href="skype:live:bobangajicsm" rel="noreferrer" target="_blank">
+        <a
+          href="mailto:conghau1132000@gmail.com"
+          // onClick={() => {
+          //   window.location = 'mailto:conghau1132000@gmail.com'
+          // }}
+        >
           <FontAwesomeIcon
-            icon={faSkype}
+            icon={faEnvelope}
             color="#4d4d4e"
             className="anchor-icon"
           />

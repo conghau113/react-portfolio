@@ -1,3 +1,4 @@
+@import '../../style/maincolors.scss';
 .homePage {
   .textZone {
     position: absolute;
@@ -9,7 +10,7 @@
   }
 
   h1 {
-    color: #fff;
+    color: $text-active;
     font-size: 56px;
     line-height: 53px;
     margin: 0;
@@ -20,7 +21,7 @@
     &:before {
       content: '<h1>';
       font-family: 'La Belle Aurore', cursive;
-      color: #ffd700;
+      color: $primary-color;
       font-size: 18px;
       position: absolute;
       margin-top: -40px;
@@ -31,7 +32,7 @@
     &:after {
       content: '<h1/>';
       font-family: 'La Belle Aurore', cursive;
-      color: #ffd700;
+      color: $primary-color;
       font-size: 18px;
       position: absolute;
       margin-top: 18px;
@@ -51,7 +52,7 @@
   }
 
   h2 {
-    color: #8d8d8d;
+    color: $text-color;
     margin-top: 20px;
     font-weight: 400;
     font-size: 13px;
@@ -62,14 +63,14 @@
   }
 
   .flatButton {
-    color: #ffd700;
+    color: $primary-color;
     font-size: 13px;
     font-weight: 400;
     letter-spacing: 4px;
     font-family: sans-serif;
     text-decoration: none;
     padding: 10px 18px;
-    border: 1px solid #ffd700;
+    border: 1px solid $primary-color;
     margin-top: 25px;
     float: left;
     animation: fadeInAnimation 1s 1.8s backwards;
@@ -77,9 +78,18 @@
     white-space: nowrap;
 
     &:hover {
-      background: #ffd700;
-      color: #333;
+      background: $primary-color;
+      color: $gray-color;
       transition: all 0.3s ease-out;
     }
+  }
+
+  .homeImageBox{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    background-color: $green-color;
+    transform: translateY(-76px);
   }
 }

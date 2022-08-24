@@ -25,13 +25,15 @@ const Work = () => {
                 src={mywork.cover}
                 alt="Click to open!"
               />
-              <div className='myworkContent'>
-                <p className='myworkTitle'>{mywork.title}</p>
-                <h4 className='myworkDes'>{mywork.description}</h4>
+              <div className="myworkContent">
+                <p className="myworkTitle">{mywork.title}</p>
+                <h4 className="myworkDes">{mywork.description}</h4>
                 <button
-                  className='myworkBtn'
+                  className="myworkBtn"
                   onClick={() => window.open(mywork.url)}
-                >View</button>
+                >
+                  View
+                </button>
               </div>
             </div>
           )
