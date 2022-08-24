@@ -11,19 +11,34 @@ $a03out: all 0.3s ease-out;
   z-index: 3;
   min-height: 500px;
 
+  .nameAva{
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.677);
+    font-size: 10px;
+    margin-top: 9px;
+    font-weight: lighter;
+    text-align: center;
+    // -webkit-text-stroke: 0.1px rgb(255, 255, 255);
+  }
+
   .logo {
     display: block;
-    padding: 8px 0;
-
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-top: 24px;
+    margin-left: 12px;
+    // border: 1px solid rgba($color: $yellow-color, $alpha: 0.5);
+    box-shadow: 2.1px 0.9px 0.5px 0px rgba(225, 255, 0, 0.419);
     img {
       display: block;
-      margin: 8px auto;
-      width: 24px;
-      height: auto;
-
-      &.sub-logo {
-        width: 50px;
-      }
+      width: 100%;
+      margin-top: 5px;
+      // height: 100%;
+      object-fit: cover;
+      scale: 1.5;
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
     }
   }
 
@@ -35,7 +50,7 @@ $a03out: all 0.3s ease-out;
     top: 50%;
     margin-top: -120px;
     width: 100%;
-    
+
     a.active {
       svg {
         color: $yellow-color;
