@@ -1,0 +1,15 @@
+@import '../../style/maincolors.scss';
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.animatedZone {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    padding: 20px;
+}
