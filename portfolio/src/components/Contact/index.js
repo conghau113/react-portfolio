@@ -13,6 +13,7 @@ import {
 const Contact = () => {
   const [letterClass, setLetterclass] = useState('text-animate')
   const refForm = useRef()
+  const contactmeText = "Contact me".split("")
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -53,8 +54,8 @@ const Contact = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
-              idx={15}
+              strArray={contactmeText}
+              idx={contactmeText.length}
             />
             <Link to="#" onClick={handleMailto}>
               <p>
@@ -99,20 +100,6 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        {/* <div className="info-map">
-          Công Hậu,
-          <br />
-          A41 ,
-          <span>conghau1132000@gmail.com</span>
-        </div> */}
-        {/* <div className="map-wrap">
-          <MapContainer center={[10.735307870308318, 106.70083887807446]} zoom={20}>
-            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[10.735307870308318, 106.70083887807446]}>
-              <Popup>Sloba lives here, come over for a cup of coffee :)</Popup>
-            </Marker>
-          </MapContainer>
-        </div> */}
       </div>
       <Loader type="pacman" />
     </>

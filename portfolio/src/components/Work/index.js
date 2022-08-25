@@ -6,6 +6,7 @@ import './index.scss'
 
 const Work = () => {
   const [letterClass, setLetterclass] = useState('text-animate')
+  const myworkText = 'My work'.split('')
   // console.log(mywork);
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -49,8 +50,8 @@ const Work = () => {
           <h1 className="page-title">
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={'My work'.split('')}
-              idx={15}
+              strArray={myworkText}
+              idx={myworkText.length}
             />
           </h1>
         </div>
