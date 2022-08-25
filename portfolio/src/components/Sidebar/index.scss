@@ -9,7 +9,7 @@
   z-index: 3;
   min-height: 500px;
 
-  .nameAva{
+  .nameAva {
     -webkit-text-fill-color: rgba(255, 255, 255, 0.677);
     font-size: 10px;
     margin-top: 9px;
@@ -29,6 +29,34 @@
     margin-left: 12px;
     // border: 1px solid rgba($color: $primary-color, $alpha: 0.5);
     box-shadow: 1.5px 1px 1px 0px $green-color;
+    // &::before {
+    //   content: '';
+    //   z-index: -1;
+    //   position: absolute;
+    //   top: 0;
+    //   right: 0;
+    //   bottom: 0;
+    //   left: 0;
+    //   background: linear-gradient(-45deg, #60efff 0%, #00ff87 153%);
+    //   transform: translate3d(33px, 20px, 0) scale(0.95);
+    //   filter: blur(0px);
+    //   opacity: var(1);
+    //   transition: opacity 0.3s;
+    //   border-radius: inherit;
+    // }
+
+    // &::after {
+    //   content: '';
+    //   z-index: -1;
+    //   position: absolute;
+    //   top: 0;
+    //   right: 0;
+    //   bottom: 0;
+    //   left: 0;
+    //   background: inherit;
+    //   border-radius: inherit;
+    // }
+
     img {
       display: block;
       width: 100%;
@@ -91,7 +119,7 @@
         width: 100%;
         text-align: center;
         opacity: 0;
-        transition: .2s ease-in-out;
+        transition: 0.2s ease-in-out;
       }
 
       &:first-child {

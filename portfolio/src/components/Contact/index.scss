@@ -2,6 +2,8 @@
 .contact-form {
   width: 100%;
   margin-top: 20px;
+  z-index: 4;
+  // background: $gradient-color;
 
   ul {
     padding: 0;
@@ -71,21 +73,25 @@
     font-size: 11px;
     letter-spacing: 3px;
     text-decoration: none;
-    padding: 10px 25px;
-    border: 1px solid $primary-color;
+    padding: 12px 27px;
+    border: 1px solid $green-hover-color;
     float: left;
     background: 0 0;
     text-transform: uppercase;
     float: right;
     text-align: center;
     margin-right: 10px;
+    margin-top: 2px;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-out;
+    z-index: 5;
+    background-size: 200% auto;
 
     &:hover {
-      background-color: $green-color;
-      color: $background-color;
-      transition: all 0.3s ease-in-out;
+      background: $green-color;
+      color: $text-active;
+      transition: all .3s ease-out;
+      transform: translateY(-2px);
     }
   }
 }

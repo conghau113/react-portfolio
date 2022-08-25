@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
 import { Link } from 'react-router-dom'
-// import HomeImage from '../../assets/images/NCH.jpg' 
+import HomeImageBW from '../../assets/images/nch-bw.png'
+import HomeImageW from '../../assets/images/nch-w.png'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 const Home = () => {
@@ -62,8 +63,14 @@ const Home = () => {
             CONTACT ME
           </Link>
         </div>
+        <div className="shapeZone">
+          <div className="shapeZoneCircle">
+            <img className="shapeZoneImage" src={HomeImageBW} alt="Công Hậu" />
+            <img className="shapeZoneImageBack" src={HomeImageW} alt="Công Hậu" />
+          </div>
+        </div>
       </div>
-      <Loader type='pacman' />
+      <Loader type="pacman" />
     </>
   )
 }
