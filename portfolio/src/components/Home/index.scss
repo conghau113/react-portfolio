@@ -111,7 +111,7 @@
       height: 100%;
       background-image: $gradient-color;
       overflow: hidden;
-      animation: fadeInRight 1.5s 2.3s backwards;
+      animation: fadeInRight 1s 1.8s backwards;
       top: -10%;
 
       .shapeZoneImage {
@@ -121,7 +121,7 @@
         height: 100%;
         z-index: 4;
         object-fit: cover;
-        animation: fadeInRight 1.5s 2.4s backwards;
+        animation: fadeInRight 1s 1.9s backwards;
       }
       .shapeZoneImageBack {
         position: absolute;
@@ -132,7 +132,7 @@
         height: 100%;
         z-index: 3;
         object-fit: cover;
-        animation: fadeInRight 1.5s 2.45s backwards;
+        animation: fadeInRight 1s 2s backwards;
       }
     }
   }
