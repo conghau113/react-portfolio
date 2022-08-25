@@ -7,6 +7,7 @@ import Contact from './components/Contact'
 import Work from './components/Work'
 import Skills from './components/Skills'
 
+
 function App() {
   return (
     <Routes>
