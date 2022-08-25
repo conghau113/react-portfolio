@@ -1,19 +1,22 @@
 import { useState, useEffect } from 'react'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
-import myworksData from '../../data/mywork.json'
+import myworksData from '../data/mywork.json'
+import avaSidebar from '../../assets/images/NCH.jpg'
+import caraImage from '../../assets/mywork/1/carashop.png'
 import './index.scss'
 
 const Work = () => {
   const [letterClass, setLetterclass] = useState('text-animate')
   const myworkText = 'My work'.split('')
-  // console.log(mywork);
   useEffect(() => {
     const timer = setTimeout(() => {
       setLetterclass('text-animate-hover')
     }, 3000)
     return () => clearTimeout(timer)
   }, [])
+
+  const workImage = [avaSidebar, caraImage]
 
   const renderMyworks = (myworks) => {
     return (
@@ -23,7 +26,7 @@ const Work = () => {
             <div className="imageBox" key={mywork.id}>
               <img
                 className="myworkImage"
-                src={mywork.cover}
+                src={workImage[index]}
                 alt="Click to open!"
               />
               <div className="myworkContent">

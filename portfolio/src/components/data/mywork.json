@@ -2,14 +2,14 @@
     "portfolio": [
         {
             "id": 1,
-            "cover": "/mywork/1/carashop.png",
+            "cover": "/../assets/mywork/1/carashop.png",
             "title": "CARA SHOP",
             "description" : "Html5, css3, javascript",
             "url": "https://conghau113.github.io/CARAshop/"
         },
         {
             "id": 2,
-            "cover": "/mywork/1/carashop.png",
+            "cover": "/../assets/mywork/1/carashop.png",
             "title": "CARA SHOP",
             "description" : "Html5, css3, javascript",
             "url": "https://conghau113.github.io/CARAshop/"
