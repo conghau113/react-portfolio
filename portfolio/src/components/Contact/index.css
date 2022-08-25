@@ -1,0 +1,89 @@
+.contact-form {
+  width: 100%;
+  margin-top: 20px;
+  z-index: 4;
+}
+.contact-form ul {
+  padding: 0;
+  margin: 0;
+}
+.contact-form ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 10px;
+  opacity: 0;
+  overflow: hidden;
+  display: block;
+  clear: both;
+  position: relative;
+  -webkit-animation: fadeInUp 2s 2s;
+          animation: fadeInUp 2s 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.contact-form ul li.half {
+  width: 49%;
+  margin-left: 2%;
+  float: left;
+  clear: none;
+}
+.contact-form ul li.half:first-child {
+  margin-left: 0;
+}
+.contact-form input[type=text],
+.contact-form input[type=email] {
+  width: 100%;
+  border: 0;
+  background: rgb(40, 209, 131);
+  height: 50px;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.contact-form input[type=text]:focus,
+.contact-form input[type=email]:focus {
+  outline: none;
+  border: 2px solid white;
+}
+.contact-form textarea {
+  width: 100%;
+  border: 0;
+  background: rgb(40, 209, 131);
+  height: 50px;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 150px;
+}
+.contact-form textarea:focus {
+  outline: none;
+  border: 2px solid white;
+}
+.contact-form .flat-button {
+  color: rgb(255, 255, 255);
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  padding: 12px 27px;
+  border: 1px solid rgb(139, 255, 183);
+  float: left;
+  background: 0 0;
+  text-transform: uppercase;
+  float: right;
+  text-align: center;
+  margin-right: 10px;
+  margin-top: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  z-index: 5;
+  background-size: 200% auto;
+}
+.contact-form .flat-button:hover {
+  background: rgb(40, 209, 131);
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease-out;
+  transform: translateY(-2px);
+}/*# sourceMappingURL=index.css.map */

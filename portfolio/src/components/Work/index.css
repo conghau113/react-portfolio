@@ -1,0 +1,160 @@
+.portfolioPage h1 {
+  font-size: 53px;
+  font-family: "Coolvetica";
+  color: rgb(93, 255, 152);
+  font-weight: 400;
+  margin-top: 0;
+  position: relative;
+  margin-bottom: 40px;
+  left: -10px;
+  transition: all 0.3s ease-in-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.portfolioPage h1:before {
+  content: "<h1>";
+  font-family: "La Belle Aurore", cursive;
+  color: rgb(93, 255, 152);
+  font-size: 18px;
+  position: absolute;
+  margin-top: -10px;
+  left: -10px;
+  opacity: 0.6;
+  line-height: 18px;
+}
+.portfolioPage h1:after {
+  content: "<h1/>";
+  font-family: "La Belle Aurore", cursive;
+  color: rgb(93, 255, 152);
+  font-size: 18px;
+  line-height: 18px;
+  position: absolute;
+  left: -30px;
+  bottom: -20px;
+  margin-left: 20px;
+  opacity: 0.6;
+}
+.portfolioPage p {
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+  font-weight: 300;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  -webkit-animation: pulse 1s;
+          animation: pulse 1s;
+}
+.portfolioPage p:nth-of-type(1) {
+  -webkit-animation-delay: 1.1s;
+          animation-delay: 1.1s;
+}
+.portfolioPage p:nth-of-type(2) {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+.portfolioPage p:nth-of-type(3) {
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
+}
+.portfolioPage .textZone {
+  position: absolute;
+  left: 12%;
+  top: 7%;
+  width: 35%;
+  vertical-align: middle;
+  display: table-cell;
+  max-height: 90%;
+}
+.portfolioPage .text-animate-hover:hover {
+  color: rgb(255, 255, 255);
+}
+.portfolioPage .imagesContainer {
+  margin-top: 150px;
+  margin-left: 150px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+}
+.portfolioPage .imageBox {
+  position: relative;
+  flex: 1 1 20%;
+  height: 450px;
+  overflow: hidden;
+  border-radius: 10px;
+  max-width: calc(25% - 10px);
+}
+.portfolioPage .imageBox img {
+  height: 101%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 2;
+}
+.portfolioPage .imageBox .myworkContent {
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+  padding: 10px 20px;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0, rgb(0, 0, 0));
+  bottom: -70px;
+}
+.portfolioPage .imageBox .myworkTitle {
+  margin-bottom: 0;
+  margin-top: 0;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.portfolioPage .imageBox .myworkDes {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+.portfolioPage .imageBox .myworkBtn {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding: 0 23px;
+  height: 40px;
+  line-height: 34px;
+  border: 1px solid rgb(93, 255, 152);
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 100;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  cursor: pointer;
+}
+.portfolioPage .imageBox .myworkBtn:hover {
+  color: rgb(21, 21, 21);
+  transform: translateY(-3px);
+  background: rgb(93, 255, 152);
+}
+.portfolioPage .imageBox:after {
+  content: "";
+  background: linear-gradient(180deg, rgb(0, 0, 0), rgb(21, 21, 21));
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  opacity: 0;
+}
+.portfolioPage .imageBox:hover:after {
+  opacity: 0.85;
+}
+.portfolioPage .imageBox:hover .myworkContent {
+  bottom: 0;
+  background: transparent;
+}/*# sourceMappingURL=index.css.map */

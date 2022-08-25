@@ -1,0 +1,128 @@
+.homePage .textZone {
+  z-index: 2;
+  position: absolute;
+  left: 12%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50%;
+  max-height: 90%;
+}
+.homePage h1 {
+  color: rgb(255, 255, 255);
+  font-size: 56px;
+  line-height: 53px;
+  margin: 0;
+  font-family: "Coolvetica";
+  font-weight: 400;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.homePage h1:before {
+  content: "<h1>";
+  font-family: "La Belle Aurore", cursive;
+  color: rgb(93, 255, 152);
+  font-size: 18px;
+  position: absolute;
+  margin-top: -40px;
+  left: -15px;
+  opacity: 0.6;
+}
+.homePage h1:after {
+  content: "<h1/>";
+  font-family: "La Belle Aurore", cursive;
+  color: rgb(93, 255, 152);
+  font-size: 18px;
+  position: absolute;
+  margin-top: 18px;
+  margin-left: 20px;
+  -webkit-animation: fadeIn 1s 1.7s backwards;
+          animation: fadeIn 1s 1.7s backwards;
+  opacity: 0.6;
+}
+.homePage h2 {
+  color: rgb(172, 172, 172);
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 13px;
+  font-family: sans-serif;
+  letter-spacing: 3px;
+  -webkit-animation: fadeIn 1s 1.8s backwards;
+          animation: fadeIn 1s 1.8s backwards;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.homePage .flatButton {
+  color: rgb(93, 255, 152);
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  font-family: sans-serif;
+  text-decoration: none;
+  padding: 12px 18px;
+  border: 1.2px solid rgb(93, 255, 152);
+  margin-top: 25px;
+  float: left;
+  -webkit-animation: fadeInAnimation 1s 1.8s backwards;
+          animation: fadeInAnimation 1s 1.8s backwards;
+  transition: 0.3s ease-out;
+  white-space: nowrap;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.homePage .flatButton:hover {
+  color: rgb(255, 255, 255);
+  background: rgb(40, 209, 131);
+  transition: 0.3s ease-out;
+  transform: translateY(-3px);
+}
+.homePage .shapeZone {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 60%;
+  transform: translateY(-76px);
+  overflow: hidden;
+  z-index: 1;
+}
+.homePage .shapeZone .shapeZoneCircle {
+  position: relative;
+  border-radius: 500px;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to left, rgb(3, 112, 191), rgb(40, 209, 131));
+  overflow: hidden;
+  -webkit-animation: fadeInRight 1s 1.8s backwards;
+          animation: fadeInRight 1s 1.8s backwards;
+  top: -10%;
+}
+.homePage .shapeZone .shapeZoneCircle .shapeZoneImage {
+  position: relative;
+  top: 70px;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-animation: fadeInRight 1s 1.9s backwards;
+          animation: fadeInRight 1s 1.9s backwards;
+}
+.homePage .shapeZone .shapeZoneCircle .shapeZoneImageBack {
+  position: absolute;
+  color: aliceblue;
+  top: 75px;
+  right: -6px;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-animation: fadeInRight 1s 2s backwards;
+          animation: fadeInRight 1s 2s backwards;
+}/*# sourceMappingURL=index.css.map */
