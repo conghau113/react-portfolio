@@ -1,8 +1,8 @@
 {
+  "homepage": "https://conghau113.github.io/react-portfolio/",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://conghau113.github.io/react-portfolio/",
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
     "@fortawesome/fontawesome-svg-core": "^6.1.2",

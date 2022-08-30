@@ -3,8 +3,8 @@
 
 @import 'animate.css';
 // css loader
-@import '~loaders.css/src/animations/pacman.scss';
-@import '~loaders.css/src/animations/cube-transition.scss';
+@import '../node_modules/loaders.css/src/animations/pacman.scss';
+@import '../node_modules/loaders.css/src/animations/cube-transition.scss';
 
 @font-face {
   font-family: 'Helvetica Neue';
@@ -33,7 +33,7 @@ input,
 textarea {
   font-family: 'Helvetica Neue', sans-serif;
 }
-.loader-active{
+.loader-active {
   display: block;
   position: absolute;
   top: 0;
@@ -44,6 +44,6 @@ textarea {
   width: 0px;
   height: 0px;
   z-index: 6;
-  animation: fadeOut 1s .9s;
+  animation: fadeOut 1s 0.9s;
   animation-fill-mode: forwards;
 }
