@@ -54,6 +54,7 @@
     &:nth-of-type(3) {
       animation-delay: 1.3s;
     }
+
   }
 
   .textZone {
@@ -91,7 +92,7 @@
     max-width: calc(25% - 10px);
 
     img {
-      height: 101%;
+      height: 100%;
       width: 100%;
       object-fit: cover;
       z-index: 2;

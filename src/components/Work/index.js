@@ -4,6 +4,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import myworksData from '../data/mywork.json'
 import avaSidebar from '../../assets/images/NCH.jpg'
 import caraImage from '../../assets/mywork/1/carashop.png'
+import landingPortfolioImage from '../../assets/mywork/2/landingportfolio.png'
 import './index.scss'
 
 const Work = () => {
@@ -16,7 +17,7 @@ const Work = () => {
     return () => clearTimeout(timer)
   }, [])
 
-  const workImage = [avaSidebar, caraImage]
+  const workImage = [avaSidebar, caraImage, landingPortfolioImage]
 
   const renderMyworks = (myworks) => {
     return (
@@ -36,7 +37,13 @@ const Work = () => {
                   className="myworkBtn"
                   onClick={() => window.open(mywork.url)}
                 >
-                  View
+                  View demo
+                </button>
+                <button
+                  className="myworkBtn"
+                  onClick={() => window.open(mywork.urlGithup)}
+                >
+                  View code
                 </button>
               </div>
             </div>

@@ -2,17 +2,27 @@
     "portfolio": [
         {
             "id": 1,
-            "cover": "/../assets/mywork/1/carashop.png",
-            "title": "CARA SHOP",
-            "description" : "Html5, css3, javascript",
-            "url": "https://conghau113.github.io/CARAshop/"
+            "cover": "",
+            "title": "REACT PORTFOLIO",
+            "description" : "ReactJS, SCSS, EmailJS, React-Router-Dom",
+            "url": "https://conghau113.github.io/react-portfolio/",
+            "urlGithup": "https://github.com/conghau113/react-portfolio"
         },
         {
             "id": 2,
-            "cover": "/../assets/mywork/1/carashop.png",
+            "cover": "",
             "title": "CARA SHOP",
-            "description" : "Html5, css3, javascript",
-            "url": "https://conghau113.github.io/CARAshop/"
+            "description" : "HTML5, CSS3, JavaScript",
+            "url": "https://conghau113.github.io/CARAshop/",
+            "urlGithup": "https://github.com/conghau113/CARAshop"
+        },
+        {
+            "id": 3,
+            "cover": "",
+            "title": "LANDING PORTFOLIO",
+            "description" : "HTML5, CSS3, JavaScript",
+            "url": "https://conghau113.github.io/portfolio-template/",
+            "urlGithup": "https://github.com/conghau113/portfolio-template"
         }
     ]
 }

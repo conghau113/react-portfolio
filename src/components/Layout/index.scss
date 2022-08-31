@@ -129,6 +129,16 @@
     span{
       color: $primary-color;
     }
+    a{
+      color: $primary-color;
+      // text-decoration: none;
+      transition: all .3s ease-in-out;
+      
+      &:hover{
+        text-decoration: dashed;
+        transition: all .3s ease-in-out;
+      }
+    }
   }
 
   .textZone {
@@ -136,7 +146,7 @@
     left: 12%;
     top: 50%;
     transform: translateY(-50%);
-    width: 35%;
+    width: 30%;
     vertical-align: middle;
     display: table-cell;
     max-height: 90%;

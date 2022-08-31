@@ -36,6 +36,7 @@ const AnimatedSphere = () => {
         display: 'flex',
         color: 'white',
         boxSizing: 'border-box',
+        borderRadius: '0 20px',
       }}
     >
       {tag.value}

@@ -7,23 +7,8 @@ import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 const Home = () => {
   const [letterClass, setLetterclass] = useState('text-animate')
-  const nameArray = ['C', 'o', 'n', 'g', ' ', 'H', 'a', 'u']
-  const jobArray = [
-    'w',
-    'e',
-    'b',
-    ' ',
-    'd',
-    'e',
-    'v',
-    'e',
-    'l',
-    'o',
-    'p',
-    'e',
-    'r',
-    '.',
-  ]
+  const nameArray = "Cong Hau".split("")
+  const jobArray = "Web Developer.".split("")
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -58,7 +43,7 @@ const Home = () => {
               idx={22}
             />
           </h1>
-          <h2>Front End / Javascript Developer.</h2>
+          <h2>Front End Developer.</h2>
           <Link to="/contact" className="flatButton">
             CONTACT ME
           </Link>

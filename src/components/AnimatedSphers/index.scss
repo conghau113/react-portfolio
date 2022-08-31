@@ -11,7 +11,11 @@
     height: 100%;
     position: absolute;
     right: 0;
+    top: -2%;
     padding: 20px;
     box-sizing: border-box;
     user-select: none;
+    transition: all 3s ease-in-out;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
 }

@@ -2,9 +2,10 @@ import { useState, useEffect } from 'react'
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import Loader from 'react-loaders'
+import AnimatedSphereAbout from '../AnimatedSphereAbout'
 const About = () => {
   const [letterClass, setLetterclass] = useState('text-animate')
-  
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setLetterclass('text-animate-hover')
@@ -19,22 +20,46 @@ const About = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
+              strArray={'About me'.split('')}
               idx={15}
             />
           </h1>
           <p>
-            I'm a very ambitious front-end developer looking for a role in an
-            established IT company with the opportunity to work with the latest
-            technologies on challenging and diverse projects.
+            I am a software engineering student at Ton Duc Thang University.
           </p>
           <br />
           <p align="LEFT">
-            I'm quiet confident, naturally curious, and perpetually working on
-            improving my chops one design problem at a time.
+            Currently, I am learning Front-end web with ReactJS framework and in
+            the future, I want to be a web developer both in front-end and
+            back-end.
           </p>
           <br />
+          <p align="LEFT">
+            In addition, I used to work as a designer, photographer, and editor
+            for the school's event team (
+            <a
+              href="https://www.facebook.com/ted.team"
+              rel="noreferrer"
+              target="_blank"
+            >
+              TED-Ton Duc Thang University Event Development Team
+            </a>
+            ) from 2019 to 2022
+          </p>
+          <br />
+          <p>
+            You can visit my profile on{' '}
+            <a
+              href="https://github.com/conghau113"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Githup
+            </a>{' '}
+            for more.
+          </p>
         </div>
+        <AnimatedSphereAbout className="sphereAbout" />
       </div>
       <Loader type="pacman" />
     </>
