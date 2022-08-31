@@ -130,13 +130,14 @@
       color: $primary-color;
     }
     a{
-      color: $primary-color;
-      // text-decoration: none;
-      transition: all .3s ease-in-out;
+      color: $green-color;
+      text-decoration: none;
+      transition: all .1s ease-in-out;
       
       &:hover{
         text-decoration: dashed;
-        transition: all .3s ease-in-out;
+        color: $primary-color;
+        transition: all .1s ease-in-out;
       }
     }
   }

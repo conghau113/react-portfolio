@@ -30,7 +30,7 @@ const About = () => {
           <br />
           <p align="LEFT">
             Currently, I am learning Front-end web with ReactJS framework and in
-            the future, I want to be a web developer both in front-end and
+            the future, I want to be a web developer both front-end and
             back-end.
           </p>
           <br />
