@@ -61,6 +61,8 @@
     display: flex;
     flex-wrap: wrap;
     .textZone {
+      // position: initial;
+      top: 40px;
       width: 80%;
       transform: none;
       // box-sizing: border-box;
@@ -69,6 +71,9 @@
 
       h1 {
         font-size: 46px;
+        margin-bottom: 0;
+        margin-top: 20px;
+        position: initial;
       }
       p {
         width: 100%;

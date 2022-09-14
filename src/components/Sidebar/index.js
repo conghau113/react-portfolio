@@ -29,7 +29,7 @@ const Sidebar = () => {
     <div className="navBar">
       {showNav && <div onClick={handleClickIcon} className="overlay"></div>}
       <div className="navLogo">
-        <Link className="logo" to="/about">
+        <Link onClick={handleClickIcon} className="logo" to="/about">
           <img src={avaSidebar} alt="Công Hậu" />
         </Link>
         <h6 className="nameAva">Công Hậu</h6>
