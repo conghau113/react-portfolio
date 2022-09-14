@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react'
+import HomeImageBW from '../../assets/images/nch-bw.png'
+import HomeImageW from '../../assets/images/nch-w.png'
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import Loader from 'react-loaders'
@@ -60,6 +62,16 @@ const About = () => {
           </p>
         </div>
         <AnimatedSphereAbout className="sphereAbout" />
+        <div className="shapeZone">
+          <div className="shapeZoneCircle">
+            <img className="shapeZoneImage" src={HomeImageBW} alt="Công Hậu" />
+            <img
+              className="shapeZoneImageBack"
+              src={HomeImageW}
+              alt="Công Hậu"
+            />
+          </div>
+        </div>
       </div>
       <Loader type="pacman" />
     </>

@@ -1,61 +1,76 @@
 @import '../../style/maincolors.scss';
 
 .navBar {
+  .overlay {
+    display: none;
+    animation: slideOutLeft 0.5s;
+  }
+  .menuBar {
+    display: none;
+  }
+
   background: $background-color;
   width: 75px;
   height: 100%;
   position: absolute;
   top: 0;
+  // bottom: 0;
+  left: 0;
   z-index: 3;
   min-height: 500px;
 
-  .nameAva {
-    -webkit-text-fill-color: rgba(255, 255, 255, 0.677);
-    font-size: 10px;
-    margin-top: 9px;
-    font-weight: lighter;
-    text-align: center;
+  .navLogo {
     user-select: none;
-    // -webkit-text-stroke: 0.1px rgb(255, 255, 255);
-  }
+    z-index: 6;
+    padding: 20px 12px;
+    .nameAva {
+      -webkit-text-fill-color: rgba(255, 255, 255, 0.677);
+      font-size: 10px;
+      margin-top: 9px;
+      font-weight: lighter;
+      text-align: center;
+      user-select: none;
+      // -webkit-text-stroke: 0.1px rgb(255, 255, 255);
+    }
 
-  .logo {
-    display: block;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    overflow: hidden;
-    margin-top: 24px;
-    margin-left: 12px;
-    // border: 1px solid rgba($color: $primary-color, $alpha: 0.5);
-    box-shadow: 1.5px 1px 1px 0px $green-color;
-    // &::before {
-    //   content: '';
-    //   z-index: -1;
-    //   position: absolute;
-    //   top: 0;
-    //   right: 0;
-    //   bottom: 0;
-    //   left: 0;
-    //   background: linear-gradient(-45deg, #60efff 0%, #00ff87 153%);
-    //   transform: translate3d(33px, 20px, 0) scale(0.95);
-    //   filter: blur(0px);
-    //   opacity: var(1);
-    //   transition: opacity 0.3s;
-    //   border-radius: inherit;
-    // }
+    .logo {
+      display: block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+      overflow: hidden;
+      // margin-top: 24px;
+      // margin-left: 12px;
+      // border: 1px solid rgba($color: $primary-color, $alpha: 0.5);
+      box-shadow: 1.5px 1px 1px 0px $green-color;
+      // &::before {
+      //   content: '';
+      //   z-index: -1;
+      //   position: absolute;
+      //   top: 0;
+      //   right: 0;
+      //   bottom: 0;
+      //   left: 0;
+      //   background: linear-gradient(-45deg, #60efff 0%, #00ff87 153%);
+      //   transform: translate3d(33px, 20px, 0) scale(0.95);
+      //   filter: blur(0px);
+      //   opacity: var(1);
+      //   transition: opacity 0.3s;
+      //   border-radius: inherit;
+      // }
 
-    // &::after {
-    //   content: '';
-    //   z-index: -1;
-    //   position: absolute;
-    //   top: 0;
-    //   right: 0;
-    //   bottom: 0;
-    //   left: 0;
-    //   background: inherit;
-    //   border-radius: inherit;
-    // }
+      // &::after {
+      //   content: '';
+      //   z-index: -1;
+      //   position: absolute;
+      //   top: 0;
+      //   right: 0;
+      //   bottom: 0;
+      //   left: 0;
+      //   background: inherit;
+      //   border-radius: inherit;
+      // }
+    }
 
     img {
       display: block;
@@ -161,6 +176,7 @@
     list-style: none;
     text-align: center;
     margin: 0;
+    z-index: 4;
 
     li {
       a {
@@ -175,6 +191,143 @@
         .anchor-icon {
           color: $primary-color;
         }
+      }
+    }
+  }
+}
+
+// responsive
+@media screen and (max-width: 1200px) {
+  .navBar {
+    .overlay {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 4;
+      animation: slideInLeft 0.5s;
+      background-color: rgba($color: $background-color, $alpha: 0.6);
+    }
+    // display: none;
+    background: transparent;
+    position: initial;
+    height: auto;
+    z-index: 5;
+    min-height: auto;
+    // transform: translateX(-220px);
+
+    .menuBar {
+      display: block;
+      position: fixed;
+      top: 30px;
+      right: 30px;
+      z-index: 6;
+      color: $text-active;
+      font-size: 24px;
+      cursor: pointer;
+      padding: 12px 14px;
+      border-radius: 50px;
+      background-color: rgba($color: $background-color, $alpha: 0.5);
+      transition: 0.2s ease-in;
+      user-select: none;
+
+      &:hover {
+        transform: scale(1.1);
+        transition: 0.2s ease-in;
+        background-color: rgba($color: $background-color, $alpha: 0.7);
+      }
+    }
+    .navLogo {
+      display: flex;
+      // justify-content: center;
+      padding: 30px 25px;
+      align-items: center;
+      position: fixed;
+      width: 220px;
+      top: 0;
+      left: 0;
+      z-index: 5;
+      // background-color: $background-color;
+
+      .logo {
+        border-radius: 50px;
+      }
+      .nameAva {
+        margin-left: 15px;
+      }
+    }
+
+    nav,
+    ul {
+      display: none;
+      // transition: all 0.3s ease-in;
+      animation: slideOutLeft 0.5s;
+    }
+
+    ul {
+      position: fixed;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 65px 20px 35px;
+      width: 220px;
+      // top: 0;
+      align-items: center;
+      // z-index: 3;
+      animation: slideOutLeft 0.5s;
+    }
+
+    nav {
+      // padding-top: 50px;
+      // display: block;
+      // transform: translateX(220px);
+      animation: slideInLeft 0.5s;
+      width: 220px;
+      height: 110%;
+      background: $background-color;
+      position: fixed;
+      top: 110px;
+      left: 0;
+      z-index: 4;
+      padding-top: 230px;
+      a {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 50px;
+        // text-align: left;
+        align-items: center;
+        &:hover {
+          svg {
+            color: $primary-color;
+            transition: all 0.1s ease-in;
+          }
+        }
+
+        &::after {
+          opacity: 1;
+          position: initial;
+          width: auto;
+          // text-align: center;
+          text-align: initial;
+          margin-left: 10px;
+        }
+        svg {
+          opacity: 1 !important;
+        }
+      }
+
+      a.active {
+        &::after {
+          color: $primary-color;
+        }
+      }
+      &.mobile-show {
+        display: block;
+      }
+      &.mobile-close {
+        display: none;
+        animation: slideOutLeft 0.5s;
       }
     }
   }

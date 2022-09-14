@@ -23,7 +23,7 @@ const texts = [
   'SQL Server',
 ]
 const options = {
-  radius: 400,
+  radius: 350,
   // animation speed
   // slow, normal, fast
   maxSpeed: 'fast',

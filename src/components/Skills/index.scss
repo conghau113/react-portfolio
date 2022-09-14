@@ -1,0 +1,48 @@
+@import '../../style/maincolors.scss';
+@media screen and (max-width: 1200px) {
+  .container.skillsPage {
+    display: flex;
+    flex-wrap: wrap;
+    .textZone {
+      position: initial;
+      width: 100%;
+      transform: none;
+      box-sizing: border-box;
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 20px;
+
+      h1 {
+        font-size: 36px;
+        position: initial;
+        margin-bottom: 20px;
+      }
+      p{
+        background-image: linear-gradient(to right, $background-color, rgba(255, 255, 255, 0));
+      }
+    }
+
+    .animatedZone{
+        margin-top: 20px;
+        position: relative;
+        padding: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+
+        .tag-cloud{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center ;
+            span{
+                position: initial;
+                display: inline-block !important;
+                // border-radius: 0 !important;
+            }
+        }
+    }
+  }
+}

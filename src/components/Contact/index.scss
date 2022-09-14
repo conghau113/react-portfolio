@@ -90,11 +90,83 @@
     &:hover {
       background: $green-color;
       color: $text-active;
-      transition: all .3s ease-out;
+      transition: all 0.3s ease-out;
       transform: translateY(-2px);
     }
   }
 }
+
+// .container.contactPage {
+//   .animateContactZone {
+//     position: absolute;
+//     right: 10%;
+//     top: 5%;
+//     opacity: 0;
+//     animation: fadeInRight 1s 1.5s forwards;
+
+//     div {
+//       // opacity: 0.5;
+//       padding: 40px;
+//       // overflow: hidden;
+//       width: 100%;
+//       font-weight: bold;
+//       line-height: 0.8;
+//       text-align: left;
+//       font-size: 3rem;
+//       color: $text-active;
+//       font-family: 'Georgia';
+//       text-shadow: makelongshadow($color, $color2, $color3, $color4, $color5);
+//       animation-name: animateShadow;
+//       animation-duration: 1s;
+//       animation-iteration-count: infinite;
+
+//       span {
+//         font-size: 80px;
+//       }
+//     }
+
+//     @function makelongshadow($color, $color2, $color3, $color4, $color5) {
+//       $val: 0px 0px $color;
+//       @for $i from 1 through 20 {
+//         $val: #{$val}, -#{$i}px #{$i}px #{$color};
+//       }
+//       @for $i from 21 through 40 {
+//         $val: #{$val}, -#{$i}px #{$i}px #{$color2};
+//       }
+//       @for $i from 41 through 60 {
+//         $val: #{$val}, -#{$i}px #{$i}px #{$color3};
+//       }
+//       @for $i from 61 through 80 {
+//         $val: #{$val}, -#{$i}px #{$i}px #{$color4};
+//       }
+//       @for $i from 81 through 100 {
+//         $val: #{$val}, -#{$i}px #{$i}px #{$color5};
+//       }
+//       @return $val;
+//     }
+
+//     @keyframes animateShadow {
+//       0% {
+//         text-shadow: makelongshadow($color, $color2, $color3, $color4, $color5);
+//       }
+//       20% {
+//         text-shadow: makelongshadow($color2, $color3, $color4, $color5, $color);
+//       }
+//       40% {
+//         text-shadow: makelongshadow($color3, $color4, $color5, $color, $color2);
+//       }
+//       60% {
+//         text-shadow: makelongshadow($color4, $color5, $color, $color2, $color3);
+//       }
+//       80% {
+//         text-shadow: makelongshadow($color5, $color, $color2, $color3, $color4);
+//       }
+//       100% {
+//         text-shadow: makelongshadow($color, $color2, $color3, $color4, $color5);
+//       }
+//     }
+//   }
+// }
 
 // .map-wrap {
 //   background: rgba(8, 253, 216, 0.1);

@@ -6,14 +6,12 @@ import AnimatedLetters from '../AnimatedLetters'
 import emailjs from '@emailjs/browser'
 import './index.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faEnvelopeCircleCheck
-} from '@fortawesome/free-solid-svg-icons'
+import { faEnvelopeCircleCheck } from '@fortawesome/free-solid-svg-icons'
 
 const Contact = () => {
   const [letterClass, setLetterclass] = useState('text-animate')
   const refForm = useRef()
-  const contactmeText = "Contact me".split("")
+  const contactmeText = 'Contact me'.split('')
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -100,6 +98,29 @@ const Contact = () => {
             </form>
           </div>
         </div>
+        {/* <div className="animateContactZone">
+          <main class="site__main">
+            <div>
+              <span >
+                Contact me! <br />
+                Contact me!
+                <br />
+                Contact me!
+                <br />
+                Contact me!
+                <br />
+                Contact me!
+                <br />
+                Contact me!
+                <br />
+                Contact me!
+                <br />
+                Contact me!
+                <br />
+              </span>
+            </div>
+          </main>
+        </div> */}
       </div>
       <Loader type="pacman" />
     </>
