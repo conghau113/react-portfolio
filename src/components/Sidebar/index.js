@@ -8,7 +8,6 @@ import {
   faUser,
   faBriefcase,
   faGears,
-  faBars,
 } from '@fortawesome/free-solid-svg-icons'
 import {
   faLinkedin,
@@ -21,7 +20,7 @@ const Sidebar = () => {
   const [showNav, setShowNav] = useState(false)
 
   const handleClickMenu = () => {
-    showNav ? setShowNav('') : setShowNav('mobile-close')
+    showNav ? setShowNav('') : setShowNav('menuOpen')
   }
   const handleClickIcon = () => setShowNav(false)
 
@@ -132,12 +131,13 @@ const Sidebar = () => {
           </a>
         </li>
       </ul>
-      <FontAwesomeIcon
+      {/* <FontAwesomeIcon
         onClick={handleClickMenu}
         className="menuBar"
         icon={faBars}
         color="#4d4d4e"
-      />
+      /> */}
+      <span onClick={handleClickMenu} className={`menuBar ${showNav}`}></span>
     </div>
   )
 }
